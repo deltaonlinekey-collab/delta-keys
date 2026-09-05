@@ -7,6 +7,32 @@
   <title>DELTA.KEYS — Instant Digital Keys</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
+  <section id="upiPayment" class="card" style="display:none;">
+  <h2>Pay with UPI</h2>
+
+  <p>Send the exact amount to:</p>
+  <p><strong>UPI ID:</strong> 8590887093@fam</p>
+
+  <p id="upiAmount"></p>
+
+  <a id="upiPayLink" href="#">
+    Open UPI Payment App
+  </a>
+
+  <label for="upiUtr">UTR / Transaction ID</label>
+  <input
+    id="upiUtr"
+    type="text"
+    placeholder="Enter your UTR number"
+    maxlength="50"
+  >
+
+  <button type="button" onclick="submitUpiPayment()">
+    Submit Payment
+  </button>
+
+  <p id="upiMsg"></p>
+  </section>
 <body>
 <header class="topbar">
   <a class="brand" href="/">DELTA<span>.KEYS</span></a>
